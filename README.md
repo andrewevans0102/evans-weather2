@@ -1,5 +1,7 @@
 # Evans Weather2
 
+![About Image](./ABOUT_IMAGE.png)
+
 This is the open source version of my home weather station. I outline the project in my post [Building a Weather Station with JavaScript]().
 
 The project uses the following hardware:
