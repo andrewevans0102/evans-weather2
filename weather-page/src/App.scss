@@ -1,0 +1,179 @@
+body {
+    font-family: 'Aldrich', sans-serif;
+}
+
+.weather {
+    &__title {
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 0;
+        padding: 0;
+    }
+
+    &__output {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+
+        &--results {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+
+            &-group {
+                display: flex;
+                margin: 5px;
+                padding: 0;
+            }
+        }
+    }
+
+    &__temp {
+        display: flex;
+        justify-content: center;
+        background-color: #a1bee3;
+        border-radius: 20px;
+        font-size: 35px;
+        align-items: center;
+        width: 400px;
+        margin-right: 10px;
+    }
+
+    &__wind {
+        display: flex;
+        justify-content: center;
+        background-color: #a1bee3;
+        border-radius: 20px;
+        font-size: 35px;
+        align-items: center;
+        width: 400px;
+        margin-right: 10px;
+        flex-direction: column;
+
+        p {
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    &__humidity {
+        display: flex;
+        justify-content: center;
+        background-color: #7fbda3;
+        border-radius: 20px;
+        font-size: 35px;
+        width: 400px;
+    }
+
+    &__barometer {
+        display: flex;
+        justify-content: center;
+        background-color: #7fbda3;
+        border-radius: 20px;
+        font-size: 35px;
+        width: 400px;
+        flex-direction: column;
+        text-align: center;
+
+        &--high {
+            color: blue;
+        }
+
+        &--low {
+            color: red;
+        }
+
+        p {
+            margin: 0;
+        }
+    }
+
+    &__time {
+        display: flex;
+        justify-content: space-evenly;
+
+        &--retrieved {
+            color: blue;
+        }
+
+        &--recorded {
+            color: green;
+        }
+    }
+
+    &__status {
+        &--success {
+            background-color: green;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 10px;
+            padding-right: 10px;
+            border-radius: 20px;
+            color: white;
+            margin-right: 5px;
+            font-size: 18px;
+        }
+        &--error {
+            background-color: red;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 10px;
+            padding-right: 10px;
+            border-radius: 20px;
+            color: white;
+            margin-right: 5px;
+            font-size: 18px;
+        }
+    }
+
+    &__noaa {
+        display: flex;
+        justify-content: center;
+        // align-items: flex-start;
+        // height: 100%;
+
+        &--entry {
+            display: flex;
+            flex-direction: column;
+            width: 180px;
+            color: purple;
+            padding-left: 10px;
+            padding-right: 10px;
+            border: solid;
+            border-radius: 20px;
+            font-size: 18px;
+            margin: 5px;
+            align-items: stretch;
+
+            &-name {
+                font-size: 19px;
+                text-align: center;
+                color: green;
+                font-weight: 800;
+                padding-top: 0;
+                margin-top: 0;
+            }
+        }
+    }
+
+    &__chart {
+        width: 800px;
+        // height: 180px;
+        font-size: 20px;
+        margin: 0;
+    }
+
+    &__spinner {
+        display: flex;
+        justify-content: center;
+        color: green;
+        margin: 200px;
+        flex-direction: column;
+        align-items: center;
+    }
+}
